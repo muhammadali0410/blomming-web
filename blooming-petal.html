@@ -1,0 +1,1073 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blooming Petals - Flower Shop</title>
+     
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style3.css">
+</head>
+<body>
+   <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="https://cdn-icons-png.flaticon.com/512/1245/1245982.png" height="40" alt="Logo" class="me-2 logo-img">
+            <span class="brand-text">Blooming Petals</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">
+                        <i class="fas fa-home d-lg-none me-2"></i>Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">
+                        <i class="fas fa-info-circle d-lg-none me-2"></i>About Us
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="themesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-palette d-lg-none me-2"></i>Floral Themes
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-lg" aria-labelledby="themesDropdown">
+                        <li>
+                            <a class="dropdown-item theme-item" href="#birthday-section">
+                                <img src="https://cdn-icons-png.flaticon.com/512/2583/2583344.png" width="24" height="24" class="me-2">
+                                <div>
+                                    <div class="fw-bold">Birthday Flowers</div>
+                                    <small class="text-muted">Bright and cheerful arrangements</small>
+                                </div>
+                            </a>
+                        </li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li>
+                            <a class="dropdown-item theme-item" href="#wedding-section">
+                                <img src="https://cdn-icons-png.flaticon.com/512/2583/2583436.png" width="24" height="24" class="me-2">
+                                <div>
+                                    <div class="fw-bold">Wedding Flowers</div>
+                                    <small class="text-muted">Elegant arrangements for your big day</small>
+                                </div>
+                            </a>
+                        </li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li>
+                            <a class="dropdown-item theme-item" href="#anniversary-section">
+                                <img src="https://cdn-icons-png.flaticon.com/512/2583/2583461.png" width="24" height="24" class="me-2">
+                                <div>
+                                    <div class="fw-bold">Anniversary Flowers</div>
+                                    <small class="text-muted">Romantic blooms for special moments</small>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">
+                        <i class="fas fa-envelope d-lg-none me-2"></i>Contact
+                    </a>
+                </li>
+                <li class="nav-item cart-icon">
+                    <a class="nav-link" href="#" data-bs-toggle="offcanvas" data-bs-target="#shoppingCart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+            <form class="d-flex search-form ms-lg-3">
+                <div class="input-group">
+                    <input class="form-control search-input" type="search" placeholder="Search flowers..." aria-label="Search">
+                    <button class="btn search-btn" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</nav>
+  <!-- Hero Section  -->
+<section id="home" class="hero-section">
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="hero-slide" style="background-image: url(img/banner1.jpg);">
+                    <div class="hero-content text-center">
+                        <h1 class="animate__animated animate__fadeInDown">Beautiful Flowers for Every Occasion</h1>
+                        <p class="animate__animated animate__fadeIn animate__delay-1s">We deliver fresh flowers across Karachi with same day delivery option available. Order now and make your loved ones happy!</p>
+                        <div class="d-flex justify-content-center flex-wrap animate__animated animate__fadeInUp animate__delay-2s">
+                            <a href="#birthday-section" class="btn btn-primary btn-lg me-2 mb-2">Birthday Flowers</a>
+                            <a href="#wedding-section" class="btn btn-outline-light btn-lg mb-2">Wedding Flowers</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="hero-slide" style="background-image: url(img/banner2.jpg);">
+                    <div class="hero-content text-center">
+                        <h1 class="animate__animated animate__fadeInDown">Premium Quality Flowers</h1>
+                        <p class="animate__animated animate__fadeIn animate__delay-1s">Handpicked fresh flowers delivered to your doorstep with care and love.</p>
+                        <div class="d-flex justify-content-center flex-wrap animate__animated animate__fadeInUp animate__delay-2s">
+                            <a href="#anniversary-section" class="btn btn-primary btn-lg me-2 mb-2">Anniversary Flowers</a>
+                            <a href="#contact" class="btn btn-outline-light btn-lg mb-2">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="hero-slide" style="background-image: url(img/banner3.jpg);">
+                    <div class="hero-content text-center">
+                        <h1 class="animate__animated animate__fadeInDown">Special Occasions</h1>
+                        <p class="animate__animated animate__fadeIn animate__delay-1s">Perfect floral arrangements for weddings, birthdays, anniversaries and more.</p>
+                        <div class="d-flex justify-content-center flex-wrap animate__animated animate__fadeInUp animate__delay-2s">
+                            <a href="#categories" class="btn btn-primary btn-lg me-2 mb-2">Explore Flowers</a>
+                            <a href="#contact" class="btn btn-outline-light btn-lg mb-2">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+
+   <!-- Leaf Slider -->
+<div class="leaf-slider">
+    <div class="container">
+        <div class="leaf-slider-container">
+            <div class="leaf-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Same Day Delivery in Karachi</span>
+            </div>
+            <div class="leaf-item">
+                <i class="fas fa-check-circle"></i>
+                <span>100% Fresh Flowers Guaranteed</span>
+            </div>
+            <div class="leaf-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Custom Arrangements Available</span>
+            </div>
+            <div class="leaf-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Free Delivery on Orders Over Rs. 2000</span>
+            </div>
+            <div class="leaf-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Professional Wedding Florists</span>
+            </div>
+            <div class="leaf-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Same Day Delivery in Karachi</span>
+            </div>
+            <div class="leaf-item">
+                <i class="fas fa-check-circle"></i>
+                <span>100% Fresh Flowers Guaranteed</span>
+            </div>
+            <div class="leaf-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Custom Arrangements Available</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Image Slider Below Banner -->
+<div class="image-slider-container">
+    <div class="image-slider-track">
+        <div class="image-slide">
+            <img src="https://images.unsplash.com/photo-1562690868-60bbe7293e94?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=776&q=80" alt="Rose Bouquet">
+        </div>
+        <div class="image-slide">
+            <img src="https://images.unsplash.com/photo-1576045057995-568f588f82fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="Mixed Flowers">
+        </div>
+        <div class="image-slide">
+            <img src="https://images.unsplash.com/photo-1452827073306-6e6e661baf57?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Orchids">
+        </div>
+        <div class="image-slide">
+            <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="Sunflowers">
+        </div>
+        <div class="image-slide">
+            <img src="https://images.unsplash.com/photo-1559563362-c667ba5f5480?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=772&q=80" alt="Pink Roses">
+        </div>
+        
+        <div class="image-slide">
+            <img src="https://images.unsplash.com/photo-1562690868-60bbe7293e94?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=776&q=80" alt="Rose Bouquet">
+        </div>
+        <div class="image-slide">
+            <img src="https://images.unsplash.com/photo-1576045057995-568f588f82fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="Mixed Flowers">
+        </div>
+    </div>
+</div>
+
+     <!-- About Section -->
+<section id="about" class="container my-5">
+    <h2 class="section-heading text-center animate__animated animate__fadeIn">About Blooming Petals</h2>
+    <p class="text-center lead animate__animated animate__fadeIn animate__delay-1s">At Blooming Petals, we specialize in creating elegant, fresh, and stunning floral arrangements for every occasion. Our flowers are handpicked to ensure top-notch quality, and our mission is to make every day bloom brighter for you.</p>
+    <div class="row mt-5">
+        <div class="col-md-4 text-center mb-4">
+            <div class="p-4 rounded feature-card animate__animated animate__fadeInUp">
+                <div class="feature-icon">
+                    <i class="fas fa-award fa-3x mb-3"></i>
+                </div>
+                <h4>Premium Quality</h4>
+                <p>We source only the freshest flowers from trusted growers to ensure longevity and beauty.</p>
+            </div>
+        </div>
+        <div class="col-md-4 text-center mb-4">
+            <div class="p-4 rounded feature-card animate__animated animate__fadeInUp animate__delay-1s">
+                <div class="feature-icon">
+                    <i class="fas fa-truck fa-3x mb-3"></i>
+                </div>
+                <h4>Fast Delivery</h4>
+                <p>Same-day delivery available in Karachi for orders placed before 12pm.</p>
+            </div>
+        </div>
+        <div class="col-md-4 text-center mb-4">
+            <div class="p-4 rounded feature-card animate__animated animate__fadeInUp animate__delay-2s">
+                <div class="feature-icon">
+                    <i class="fas fa-heart fa-3x mb-3"></i>
+                </div>
+                <h4>Custom Arrangements</h4>
+                <p>Our expert florists can create custom designs tailored to your specific needs.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonial-section">
+    <div class="container">
+        <h2 class="text-center mb-5 animate__animated animate__fadeIn">What Our Customers Say</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="testimonial-card text-center animate__animated animate__fadeInLeft">
+                    <div class="testimonial-img-container">
+                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Customer" class="testimonial-img">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                    </div>
+                    <h4 class="mt-3">Ayesha Khan</h4>
+                    <p class="testimonial-text">"The flowers were fresh and beautiful, exactly as shown in the pictures. Delivery was on time too!"</p>
+                    <div class="rating-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="testimonial-card text-center animate__animated animate__fadeInUp">
+                    <div class="testimonial-img-container">
+                        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Customer" class="testimonial-img">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                    </div>
+                    <h4 class="mt-3">Ali Ahmed</h4>
+                    <p class="testimonial-text">"Excellent service! My wife loved the anniversary bouquet. Will definitely order again."</p>
+                    <div class="rating-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="testimonial-card text-center animate__animated animate__fadeInRight">
+                    <div class="testimonial-img-container">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Customer" class="testimonial-img">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                    </div>
+                    <h4 class="mt-3">Fatima Malik</h4>
+                    <p class="testimonial-text">"The wedding flowers were stunning! They made my special day even more beautiful."</p>
+                    <div class="rating-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Categories Section -->
+    <section id="categories" class="categories-section">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Flower Categories</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="#birthday-section" class="category-link">
+                        <div class="category-card">
+                            <img src="https://images.unsplash.com/photo-1519378058457-4c29a0a2efac?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80" alt="Birthday Flowers">
+                            <div class="category-overlay">
+                                <h3>Birthday Flowers</h3>
+                                <p>Bright and cheerful arrangements</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#wedding-section" class="category-link">
+                        <div class="category-card">
+                            <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="Wedding Flowers">
+                            <div class="category-overlay">
+                                <h3>Wedding Flowers</h3>
+                                <p>Elegant arrangements for your big day</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#anniversary-section" class="category-link">
+                        <div class="category-card">
+                            <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="Anniversary Flowers">
+                            <div class="category-overlay">
+                                <h3>Anniversary Flowers</h3>
+                                <p>Romantic blooms for special moments</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+  <!-- Premium Birthday  -->
+ <section id="birthday-collection" class="container py-5"> 
+    <div class="text-center mb-5">
+        <h2 class="section-title animate__animated animate__fadeIn">Exquisite Birthday Arrangements</h2>
+        <p class="section-subtitle animate__animated animate__fadeIn animate__delay-1s">Handcrafted luxury bouquets to celebrate special moments</p>
+    </div>
+
+    <div class="row g-4">
+        <!-- Card 1   -->
+        <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="premium-flower-card">
+                <div class="card-badge">BESTSELLER</div>
+                <div class="flower-img-container">
+                    <img src="img/ai-generated-8941084_1280.jpg" 
+                         alt="Luxury Birthday Bouquet" 
+                         class="flower-main-img">
+                    <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" 
+                         alt="Luxury Birthday Bouquet Details" 
+                         class="flower-hover-img">
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <div>
+                            <h3 class="flower-name">Enchanted Bloom</h3>
+                            <p class="flower-description">Premium mixed seasonal flowers with decorative accents</p>
+                        </div>
+                        <div class="flower-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.9</span>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <div class="price-container">
+                            <span class="current-price">Rs. 3,499</span>
+                            <span class="original-price">Rs. 4,200</span>
+                        </div>
+                        <button class="btn-add-to-cart" 
+                                data-id="p101" 
+                                data-name="Enchanted Bloom" 
+                                data-price="3499" 
+                                data-img="https://images.unsplash.com/photo-1519378058457-4c29a0a2efac?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80">
+                            <i class="fas fa-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2   -->
+        <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="premium-flower-card">
+                <div class="card-badge">NEW</div>
+                <div class="flower-img-container">
+                    <img src="img/rose-3063284_1280.jpg" 
+                         alt="Golden Celebration Arrangement" 
+                         class="flower-main-img">
+                    <img src="img/blue-moon-rose-5513266_1280.jpg" 
+                         alt="Golden Celebration Details" 
+                         class="flower-hover-img">
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <div>
+                            <h3 class="flower-name">Golden Celebration</h3>
+                            <p class="flower-description">Sunflowers with seasonal yellow blooms in artisan vase</p>
+                        </div>
+                        <div class="flower-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.8</span>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <div class="price-container">
+                            <span class="current-price">Rs. 4,199</span>
+                        </div>
+                        <button class="btn-add-to-cart" 
+                                data-id="p102" 
+                                data-name="Golden Celebration" 
+                                data-price="4199" 
+                                data-img="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80">
+                            <i class="fas fa-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3   -->
+        <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="premium-flower-card">
+                <div class="flower-img-container">
+                    <img src="https://images.unsplash.com/photo-1559563362-c667ba5f5480?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=772&q=80" 
+                         alt="Rose Elegance Bouquet" 
+                         class="flower-main-img">
+                    <img src="img/rose- 2.jpg" 
+                         alt="Rose Elegance Details" 
+                         class="flower-hover-img">
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <div>
+                            <h3 class="flower-name">Rose Elegance</h3>
+                            <p class="flower-description">Premium long-stemmed roses with delicate foliage</p>
+                        </div>
+                        <div class="flower-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.7</span>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <div class="price-container">
+                            <span class="current-price">Rs. 3,899</span>
+                            <span class="original-price">Rs. 4,500</span>
+                        </div>
+                        <button class="btn-add-to-cart" 
+                                data-id="p103" 
+                                data-name="Rose Elegance" 
+                                data-price="3899" 
+                                data-img="https://images.unsplash.com/photo-1559563362-c667ba5f5480?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=772&q=80">
+                            <i class="fas fa-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 4   -->
+        <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="premium-flower-card">
+                <div class="card-badge">LIMITED</div>
+                <div class="flower-img-container">
+                    <img src="img/orchid-2.jpg" 
+                         alt="Orchid Serenity Arrangement" 
+                         class="flower-main-img">
+                    <img src="img/orchids- 1.jpg" 
+                         alt="Orchid Serenity Details" 
+                         class="flower-hover-img">
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <div>
+                            <h3 class="flower-name">Orchid Serenity</h3>
+                            <p class="flower-description">Exotic orchids in contemporary ceramic vessel</p>
+                        </div>
+                        <div class="flower-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.9</span>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <div class="price-container">
+                            <span class="current-price">Rs. 5,499</span>
+                        </div>
+                        <button class="btn-add-to-cart" 
+                                data-id="p104" 
+                                data-name="Orchid Serenity" 
+                                data-price="5499" 
+                                data-img="https://images.unsplash.com/photo-1453904300235-0f2f60b15b5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80">
+                            <i class="fas fa-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Luxury Wedding   -->
+     <section id="wedding-collection" class="container py-5">
+     <div class="text-center mb-5">
+        <h2 class="section-title animate__animated animate__fadeIn">Luxury Wedding Florals</h2>
+        <p class="section-subtitle animate__animated animate__fadeIn animate__delay-1s">Breathtaking arrangements for your special day</p>
+    </div>
+
+    <div class="row g-4">
+        <!-- Card 1   -->
+        <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="premium-flower-card">
+                <div class="card-badge">BESTSELLER</div>
+                <div class="flower-img-container">
+                    <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" 
+                         alt="Classic Bridal Bouquet" 
+                         class="flower-main-img">
+                    <img src="img/wedding1.jpg" 
+                         alt="Bridal Bouquet Details" 
+                         class="flower-hover-img">
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <div>
+                            <h3 class="flower-name">Classic Bridal</h3>
+                            <p class="flower-description">White roses and peonies with delicate greenery</p>
+                        </div>
+                        <div class="flower-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.9</span>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <div class="price-container">
+                            <span class="current-price">Rs. 12,999</span>
+                        </div>
+                        <button class="btn-add-to-cart" 
+                                data-id="w101" 
+                                data-name="Classic Bridal Bouquet" 
+                                data-price="12999" 
+                                data-img="https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80">
+                            <i class="fas fa-plus"></i> Inquire
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2   -->
+        <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="premium-flower-card">
+                <div class="card-badge">LUXURY</div>
+                <div class="flower-img-container">
+                    <img src="img/wedding2.jpg" 
+                         alt="Luxury Centerpiece" 
+                         class="flower-main-img">
+                    <img src="img/wedding3.jpg" 
+                         alt="Centerpiece Details" 
+                         class="flower-hover-img">
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <div>
+                            <h3 class="flower-name">Royal Centerpiece</h3>
+                            <p class="flower-description">Grand arrangement with orchids and candles</p>
+                        </div>
+                        <div class="flower-rating">
+                            <i class="fas fa-star"></i>
+                            <span>5.0</span>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <div class="price-container">
+                            <span class="current-price">Rs. 18,500</span>
+                        </div>
+                        <button class="btn-add-to-cart" 
+                                data-id="w102" 
+                                data-name="Royal Centerpiece" 
+                                data-price="18500" 
+                                data-img="https://images.unsplash.com/photo-1526397751294-331021109fbd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1674&q=80">
+                            <i class="fas fa-plus"></i> Inquire
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3   -->
+        <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="premium-flower-card">
+                <div class="flower-img-container">
+                    <img src="img/wedding4.jpg" 
+                         alt="Bridesmaid Bouquets" 
+                         class="flower-main-img">
+                    <img src="img/wedding5.jpg" 
+                         alt="Bridesmaid Details" 
+                         class="flower-hover-img">
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <div>
+                            <h3 class="flower-name">Bridesmaid Set</h3>
+                            <p class="flower-description">Matching bouquets for wedding party (set of 5)</p>
+                        </div>
+                        <div class="flower-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.8</span>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <div class="price-container">
+                            <span class="current-price">Rs. 22,999</span>
+                            <span class="original-price">Rs. 27,000</span>
+                        </div>
+                        <button class="btn-add-to-cart" 
+                                data-id="w103" 
+                                data-name="Bridesmaid Set" 
+                                data-price="22999" 
+                                data-img="https://images.unsplash.com/photo-1559563362-c667ba5f5480?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=772&q=80">
+                            <i class="fas fa-plus"></i> Inquire
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 4  -->
+         
+        <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="premium-flower-card">
+                <div class="card-badge">POPULAR</div>
+                <div class="flower-img-container">
+                    <img src="img/wedding6.jpg" 
+                         alt="Table Arrangements" 
+                         class="flower-main-img">
+                    <img src="img/wedding7.jpg" 
+                         alt="Table Arrangement Details" 
+                         class="flower-hover-img">
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <div>
+                            <h3 class="flower-name">Table Elegance</h3>
+                            <p class="flower-description">Premium table arrangements (per table)</p>
+                        </div>
+                        <div class="flower-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.7</span>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <div class="price-container">
+                            <span class="current-price">Rs. 4,500</span>
+                            <span class="original-price">Rs. 5,200</span>
+                        </div>
+                        <button class="btn-add-to-cart" 
+                                data-id="w105" 
+                                data-name="Table Elegance" 
+                                data-price="4500" 
+                                data-img="https://images.unsplash.com/photo-1452827073306-6e6e661baf57?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80">
+                            <i class="fas fa-plus"></i> Inquire
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+ 
+</section>
+
+     <!-- Luxury Anniversary   -->
+  <section id="anniversary-collection" class="container py-5">
+    <div class="text-center mb-5">
+        <h2 class="section-title animate__animated animate__fadeIn">Anniversary Blooms</h2>
+        <p class="section-subtitle animate__animated animate__fadeIn animate__delay-1s">Celebrating love that grows more beautiful each year</p>
+    </div>
+
+    <div class="row g-4">
+        <!-- Card 1   -->
+        <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="premium-flower-card">
+                <div class="card-badge">BESTSELLER</div>
+                <div class="flower-img-container">
+                    <img src="img/Anniversary1.jpg" 
+                         alt="Classic Red Roses" 
+                         class="flower-main-img">
+                    <img src="img/Anniversary2.jpg" 
+                         alt="Rose Details" 
+                         class="flower-hover-img">
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <div>
+                            <h3 class="flower-name">Timeless Roses</h3>
+                            <p class="flower-description">Two dozen long-stemmed red roses</p>
+                        </div>
+                        <div class="flower-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.9</span>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <div class="price-container">
+                            <span class="current-price">Rs. 8,999</span>
+                        </div>
+                        <button class="btn-add-to-cart" 
+                                data-id="a101" 
+                                data-name="Timeless Roses" 
+                                data-price="8999" 
+                                data-img="https://images.unsplash.com/photo-1559563362-c667ba5f5480?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=772&q=80">
+                            <i class="fas fa-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2   -->
+        <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="premium-flower-card">
+                <div class="card-badge">LUXURY</div>
+                <div class="flower-img-container">
+                    <img src="img/orchid-2100554_1280.jpg" 
+                         alt="Orchid Arrangement" 
+                         class="flower-main-img">
+                    <img src="img/orchid-8047471_1280.jpg" 
+                         alt="Orchid Details" 
+                         class="flower-hover-img">
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <div>
+                            <h3 class="flower-name">Elegant Orchids</h3>
+                            <p class="flower-description">Exotic phalaenopsis orchid arrangement</p>
+                        </div>
+                        <div class="flower-rating">
+                            <i class="fas fa-star"></i>
+                            <span>5.0</span>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <div class="price-container">
+                            <span class="current-price">Rs. 12,500</span>
+                        </div>
+                        <button class="btn-add-to-cart" 
+                                data-id="a102" 
+                                data-name="Elegant Orchids" 
+                                data-price="12500" 
+                                data-img="https://images.unsplash.com/photo-1453904300235-0f2f60b15b5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80">
+                            <i class="fas fa-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3   -->
+        <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="premium-flower-card">
+                <div class="flower-img-container">
+                    <img src="img/pansy-3401542_1280.jpg" 
+                         alt="Mixed Flower Bouqu~et" 
+                         class="flower-main-img">
+                    <img src="img/tulips-1511854_1280.jpg" 
+                         alt="Mixed Flower Details" 
+                         class="flower-hover-img">
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <div>
+                            <h3 class="flower-name">Enchanted Garden</h3>
+                            <p class="flower-description">Luxury mixed bouquet with seasonal blooms</p>
+                        </div>
+                        <div class="flower-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.8</span>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <div class="price-container">
+                            <span class="current-price">Rs. 10,999</span>
+                            <span class="original-price">Rs. 13,000</span>
+                        </div>
+                        <button class="btn-add-to-cart" 
+                                data-id="a103" 
+                                data-name="Enchanted Garden" 
+                                data-price="10999" 
+                                data-img="https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80">
+                            <i class="fas fa-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 4   -->
+        <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="premium-flower-card">
+                <div class="card-badge">NEW</div>
+                <div class="flower-img-container">
+                    <img src="img/roses-3667791_1280.jpg" 
+                         alt="Golden Anniversary Arrangement" 
+                         class="flower-main-img">
+                    <img src="img/rose-4293143_1280.jpg" 
+                         alt="Golden Details" 
+                         class="flower-hover-img">
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <div>
+                            <h3 class="flower-name">Golden Love</h3>
+                            <p class="flower-description">Gilded roses and chrysanthemums</p>
+                        </div>
+                        <div class="flower-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.9</span>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <div class="price-container">
+                            <span class="current-price">Rs. 15,000</span>
+                        </div>
+                        <button class="btn-add-to-cart" 
+                                data-id="a104" 
+                                data-name="Golden Love" 
+                                data-price="15000" 
+                                data-img="https://images.unsplash.com/photo-1490750967868-88aa4486c946?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80">
+                            <i class="fas fa-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         
+</section>
+
+
+     
+
+ <!-- Contact Section -->
+<section id="contact" class="contact-section bg-light py-5">
+    <div class="container">
+        <div class="section-header text-center mb-5">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle text-muted">We'd love to hear from you</p>
+            <div class="divider mx-auto"></div>
+        </div>
+        
+        <div class="row g-5">
+            <div class="col-lg-6">
+                <div class="contact-form bg-white p-4 p-md-5 shadow-sm rounded">
+                    <h3 class="mb-4">Send Us a Message</h3>
+                    <form id="contactForm" class="needs-validation" novalidate>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                            <div class="invalid-feedback">Please enter your name</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                            <div class="invalid-feedback">Please enter a valid email</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Your Message</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="How can we help you?" required></textarea>
+                            <div class="invalid-feedback">Please enter your message</div>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 py-2">
+                            <i class="fas fa-paper-plane me-2"></i>Send Message
+                        </button>
+                    </form>
+                    <div id="formSuccess" class="alert alert-success mt-3 text-center" style="display: none;">
+                        <i class="fas fa-check-circle me-2"></i>Your message has been sent successfully!
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="contact-info h-100">
+                    <div class="map-container mb-4 rounded overflow-hidden shadow-sm">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.041318896492!2d67.02885931500055!3d24.8616779840527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e76651a6b3b%3A0x4d5f393f9b6b2b8e!2sDolmen%20Mall%20Clifton!5e0!3m2!1sen!2s!4v1620000000000!5m2!1sen!2s" 
+                                width="100%" 
+                                height="300" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy"
+                                class="rounded"></iframe>
+                    </div>
+                    
+                    <div class="contact-details bg-white p-4 p-md-5 shadow-sm rounded">
+                        <h3 class="mb-4">Contact Information</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <div class="d-flex">
+                                    <div class="me-3 text-primary">
+                                        <i class="fas fa-map-marker-alt fa-lg"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-0">Our Location</h6>
+                                        <p class="mb-0 text-muted">Shop #45, Dolmen Mall, Clifton, Karachi, Pakistan</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mb-3">
+                                <div class="d-flex">
+                                    <div class="me-3 text-primary">
+                                        <i class="fas fa-phone-alt fa-lg"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-0">Phone Number</h6>
+                                        <p class="mb-0 text-muted">+92 300 1234567</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mb-3">
+                                <div class="d-flex">
+                                    <div class="me-3 text-primary">
+                                        <i class="fas fa-envelope fa-lg"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-0">Email Address</h6>
+                                        <p class="mb-0 text-muted">A.H.M.H@bloomingpetals.com</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="d-flex">
+                                    <div class="me-3 text-primary">
+                                        <i class="fas fa-clock fa-lg"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-0">Working Hours</h6>
+                                        <p class="mb-0 text-muted">Daily: 9:00 AM - 9:00 PM</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white pt-5 pb-4">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="footer-about">
+                    <a href="#" class="d-flex align-items-center mb-3 text-decoration-none">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1245/1245982.png" height="40" alt="Blooming Petals Logo" class="me-2">
+                        <span class="h4 fw-bold text-white">Blooming Petals</span>
+                    </a>
+                    <p class="text-muted">Bringing nature's beauty to your special moments with exquisite floral arrangements and exceptional service across Karachi.</p>
+                    <div class="social-icons mt-4">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-whatsapp fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-2 col-md-6 mb-4">
+                <h5 class="text-uppercase mb-4">Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Home</a></li>
+                    <li class="mb-2"><a href="#" class="text-muted text-decoration-none">About Us</a></li>
+                
+                    <li><a href="#" class="text-muted text-decoration-none">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="col-lg-2 col-md-6 mb-4">
+                <h5 class="text-uppercase mb-4">Services</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Wedding Flowers</a></li>
+                    <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Event Decor</a></li>
+                    <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Same Day Delivery</a></li>
+                    <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Subscription</a></li>
+                    <li><a href="#" class="text-muted text-decoration-none">Custom Arrangements</a></li>
+                </ul>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 mb-4">
+                <h5 class="text-uppercase mb-4">Newsletter</h5>
+                <p class="text-muted">Subscribe to our newsletter for the latest updates and floral inspirations.</p>
+                <form class="mt-3">
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="Your Email" required>
+                        <button class="btn btn-primary" type="submit">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </form>
+                 
+            </div>
+        </div>
+        
+        <hr class="my-4" style="border-color: rgba(255,255,255,0.1);">
+        
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                <p class="mb-0 text-muted">&copy; 2025 Blooming Petals. All rights reserved.</p>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+                <p class="mb-0 text-muted">Made with <i class="fas fa-heart text-danger"></i> in Karachi</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Shopping Cart Sidebar -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="shoppingCart" aria-labelledby="shoppingCartLabel">
+    <div class="offcanvas-header border-bottom">
+        <div>
+            <h5 class="offcanvas-title" id="shoppingCartLabel">
+                <i class="fas fa-shopping-cart me-2"></i>Your Cart
+            </h5>
+            <small class="text-muted"><span id="cartItemCount">0</span> item(s)</small>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div id="cartItems">
+            <div class="text-center py-4">
+                <i class="fas fa-shopping-cart fa-2x text-muted mb-3"></i>
+                <p class="text-muted">Your cart is empty</p>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas-footer border-top p-3">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h6 class="mb-0">Subtotal:</h6>
+            <h6 class="mb-0" id="cartTotal">Rs. 0</h6>
+        </div>
+        <a href="#" class="btn btn-primary w-100 mb-2">Proceed to Checkout</a>
+        <a href="#" class="btn btn-outline-secondary w-100">Continue Shopping</a>
+    </div>
+</div>
+
+     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scriptjs/project.js"></script>
+</body>
+</html>
